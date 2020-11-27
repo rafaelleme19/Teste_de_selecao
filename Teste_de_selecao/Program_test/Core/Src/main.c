@@ -151,34 +151,6 @@ HAL_Init();
 			  debugPrintln(&huart1,"Buzzer Desligado");
 		  debugPrintln(&huart1,"------------------------------------");
 		  in[0] = 1;
-//		  if(aux == 2){
-//			  debugPrintln(&huart1,"------------------------------------");
-//			  debugPrintln(&huart1,"Porta aberta");
-//			  debugPrintln(&huart1,"Led vermelho ligado");
-//			  debugPrintln(&huart1,"Buzzer ligado");
-//			  debugPrintln(&huart1,"Led verde desligado");
-//			  debugPrintln(&huart1,"------------------------------------");
-//			  in[0] = 1;
-//		  }
-//		  else if(aux == 1){
-//			  debugPrintln(&huart1,"------------------------------------");
-//			  debugPrintln(&huart1,"Porta Fechada");
-//			  debugPrintln(&huart1,"Led vermelho Desligado");
-//			  debugPrintln(&huart1,"Buzzer Desligado");
-//			  debugPrintln(&huart1,"Led verde ligado");
-//			  debugPrintln(&huart1,"------------------------------------");
-//			  in[0] = 1;
-//		  }
-//		  else{
-//			  debugPrintln(&huart1,"------------------------------------");
-//			  debugPrintln(&huart1,"Porta Fechada");
-//			  debugPrintln(&huart1,"Led vermelho Desligado");
-//			  debugPrintln(&huart1,"Buzzer Desligado");
-//			  debugPrintln(&huart1,"Led verde desligado");
-//			  debugPrintln(&huart1,"------------------------------------");
-//			  in[0]= 1;
-		  }
-
 
 	  if(((HAL_GetTick() - timer_1) >= 1000) && (HAL_GPIO_ReadPin(GPIOA, Magnetic_Sensor_Pin))){
 		  debugPrintln(&huart1, "Ocorreu uma violacao, porta aberta");
